@@ -1,5 +1,5 @@
-import banner from './Smaller Banner.png';
-import ramen from './Red Ramen.png'
+import banner from './img/Smaller Banner.png';
+import ramen from './img/Red Ramen.png'
 import './App.css';
 
 const scheduleContent = [
