@@ -155,6 +155,9 @@ function App() {
       <Landing />
       <About />
       <Schedule content={scheduleContent} />
+      <div class="body bluebackground footer">
+        <a href="https://innovativedesign.club/" target="_blank" rel="noreferrer">&copy; innovative design</a>
+      </div>
     </>
   );
 }

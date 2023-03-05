@@ -126,7 +126,7 @@
 .about {
   display: flex;
   flex-direction: row;
-  height: 40vh;
+  /* height: 40vh; */
 }
 
 .aboutleft {
@@ -245,6 +245,21 @@
   font-size: 20px;
 }
 
+.footer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #C0D75d;
+  font-size: 20px;
+  transition: .4s;
+}
+
+.footer a:hover {
+  color: #87CCD9;
+}
+
 @media screen and (max-width: 1000px) {
   .innod {
     font-size: 20px;
@@ -257,7 +272,6 @@
   }
   
   .bottom {
-  
     margin-top: -20px;
   }
   
@@ -347,7 +361,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     align-items: center;
   
     text-align: center;
