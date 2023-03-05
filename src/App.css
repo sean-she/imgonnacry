@@ -1,38 +1,363 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+
+  background: #233797;
+
+  overflow-x: hidden;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fancyheading {
+  font-family: bd-supper, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.heading {
+  font-family: area-extended, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.body {
+  font-family: area-normal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.top {
+
+}
+
+.innod {
+  font-size: 35px;
+}
+
+.presents {
+  font-size: 25px;
+
+  margin-top: -20px;
+}
+
+.bottom {
+
+  margin-top: -50px;
+}
+
+.rgb {
+  font-size: 60px;
+  text-align: center;
+}
+
+.info {
+  font-size: 20px;
+
+  margin-top: -30px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 20px 0px 40px 0px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-decoration: none;
+
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+
+  margin: 0px 25px;
+}
+
+.learnMoreButton {
+  border: none;
+
+  background-color: #FC7159;
+  transition: 0.4s;
+}
+.learnMoreButton:hover{
+  background-color: #CA5A47;
+}
+
+.registerButton {
+  background-color: #5AA462;
+  transition: 0.4s;
+}
+.registerButton:hover {
+  background-color: #48834E;
+}
+
+.scheduleButton {
+  border: none;
+
+  background-color: #4F5FAC;
+  transition: 0.4s;
+}
+.scheduleButton:hover {
+  background-color: #3F4C8A;
+}
+
+.banner {
+  width: 100vw;
+
+  margin-top: 30px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+}
+
+.aboutleft {
+  width: 50vw;
+  background-color: #C0D75C;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.aboutheading {
+  font-size: 40px;
+  color: white;
+}
+
+.paragraphs {
+  font-size: 20px;
+}
+
+.aboutright {
+  width: 50vw;
+  background-color: #87CCD9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bluebackground {
+  background-color: #233797;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 20px 40px 40px 40px;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scheduleheading {
+  font-size: 40px;
+  color: white;
+}
+
+.speakerHover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 20px 20vw;
+  padding: 20px 20px;
+  
+  transition: .4s;
+}
+.speakerHover:hover {
+  background-color: #3F4C8A;
+  border-radius: 50px;
+}
+
+.speakerleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.speakerTime {
+  font-family: bd-supper, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.speakerName {
+  font-family: area-extended, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  color: white;
+}
+
+.speakerright{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  text-align: right;
+}
+
+.speakerDesc {
+  font-family: area-normal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: white;
+  font-size: 20px;
+}
+
+.speakerPrez {
+  font-family: area-normal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .innod {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .presents {
+    font-size: 15px;
+  
+    margin-top: -20px;
+  }
+  
+  .bottom {
+  
+    margin-top: -20px;
+  }
+  
+  .rgb {
+    font-size: 45px;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .info {
+    font-size: 15px;
+  
+    margin-top: -10px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    margin: 20px 0px 40px 0px;
+  }
+
+  .button {
+    margin: 10px 25px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .aboutleft {
+    width: auto;
+  }
+  .aboutright {
+    width: auto;
+    padding: 10px 0px;
+  }
+
+  .paragraphs {
+    font-size: 15px;
+  }
+
+  .bluebackground {
+    background-color: #233797;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .speakerHover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+    padding: auto;
+  }
+
+  .speakerleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+  }
+
+  .speakerTime {
+    font-family: bd-supper, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  
+  .speakerName {
+    font-family: area-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  
+    color: white;
+  }
+
+  .speakerright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+  
+    text-align: center;
+  }
+
+  .speakerDesc {
+    font-size: 15px;
+  }
+  
+  .speakerPrez {
+    font-size: 15px;
   }
 }
